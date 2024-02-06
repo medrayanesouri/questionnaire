@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <link rel="stylesheet" href="style.css">
+  <title> game over</title>
+</head>
+<body>
+ 
+  <div class="questionnaire">
+    <h1>Questionnaire Salle de Jeux</h1>
+     <!-- Partie 1: Informations personnelles -->
+    <h3>Partie 1 : Informations personnelles</h3>
+
+    <label for="age">1. Quel est votre âge ?</label>
+    <select id="age" name="age">
+      <option value="moins-18-ans">Moins de 18 ans</option>
+      <option value="18-25-ans">De 18 à 25 ans</option>
+      <option value="26-35-ans">De 26 à 35 ans</option>
+      <option value="36-45-ans">De 36 à 45 ans</option>
+      <option value="46-55-ans">De 46 à 55 ans</option>
+      <option value="plus-55-ans">Plus de 55 ans</option>
+    </select>
+
+    <label for="sexe">2. Quel est votre sexe ?</label>
+    <select id="sexe" name="sexe">
+      <option value="homme">Homme</option>
+      <option value="femme">Femme</option>
+      <option value="autre">Autre</option>
+    </select>
+
+    <label for="niveau-etudes">3. Quel est votre niveau d'études ?</label>
+    <select id="niveau-etudes" name="niveau-etudes">
+      <option value="inferieur-bac">Inférieur au bac</option>
+      <option value="bac">Bac</option>
+      <option value="bac-2">Bac + 2</option>
+      <option value="bac-3">Bac + 3</option>
+      <option value="bac-4-ou-plus">Bac + 4 ou plus</option>
+    </select>
+
+    <label for="situation-professionnelle">4. Quelle est votre situation professionnelle ?</label>
+    <select id="situation-professionnelle" name="situation-professionnelle">
+      <option value="etudiant">Étudiant</option>
+      <option value="salarie">Salarié</option>
+      <option value="independant">Indépendant</option>
+      <option value="demandeur-emploi">Demandeur d'emploi</option>
+      <option value="retraite">Retraité</option>
+      <option value="autre-situation">Autre</option>
+    </select>
+
+    <label for="revenu-mensuel">5. Quel est votre revenu mensuel net ?</label>
+    <select id="revenu-mensuel" name="revenu-mensuel">
+      <option value="moins-1000">Moins de 1000 dh</option>
+      <option value="1000-2000">De 1000 à 2000 dh</option>
+      <option value="2000-5000">De 2000 à 5000 dh</option>
+      <option value="plus-5000">Plus de 5000 €</option>
+    </select>
+
+    <label for="adresse-email">6. Quel est votre adresse e-mail ? (facultatif)</label>
+    <input type="email" id="adresse-email" name="adresse-email" placeholder="_______________________">
+      
+        <h2>Partie 2 : Fréquentation</h2>
+    
+        <label for="aimez-vous-jeux-video">7. Aimez-vous jouer aux jeux vidéo ?</label>
+        <select id="aimez-vous-jeux-video" name="aimez-vous-jeux-video">
+          <option value="oui-beaucoup">Oui, beaucoup</option>
+          <option value="oui-un-peu">Oui, un peu</option>
+          <option value="non-pas-du-tout">Non, pas du tout</option>
+        </select>
+    
+        <label for="types-jeux-video">8. Quels types de jeux vidéo préférez-vous ?</label>
+        <select id="types-jeux-video" name="types-jeux-video" multiple>
+          <option value="action">Action</option>
+          <option value="aventure">Aventure</option>
+          <option value="combat">Combat</option>
+          <option value="course">Course</option>
+          <option value="sport">Sport</option>
+          <option value="strategie">Stratégie</option>
+          <option value="simulation">Simulation</option>
+          <option value="reflexion">Réflexion</option>
+          <option value="role">Rôle</option>
+          <option value="musique">Musique</option>
+          <option value="autre">Autre</option>
+        </select>
+    
+        <label for="supports-jeux-video">9. Quels supports de jeux vidéo utilisez-vous ?</label>
+        <select id="supports-jeux-video" name="supports-jeux-video" multiple>
+          <option value="console-salon">Console de salon</option>
+          <option value="console-portable">Console portable</option>
+          <option value="ordinateur">Ordinateur</option>
+          <option value="smartphone">Smartphone</option>
+          <option value="tablette">Tablette</option>
+          <option value="autre-support">Autre</option>
+        </select>
+    
+        <label for="frequence-jeux-video">10. À quelle fréquence jouez-vous aux jeux vidéo ?</label>
+        <select id="frequence-jeux-video" name="frequence-jeux-video">
+          <option value="tous-les-jours">Tous les jours</option>
+          <option value="plusieurs-fois-semaine">Plusieurs fois par semaine</option>
+          <option value="une-fois-semaine">Une fois par semaine</option>
+          <option value="plusieurs-fois-mois">Plusieurs fois par mois</option>
+          <option value="une-fois-mois">Une fois par mois</option>
+          <option value="moins-une-fois-mois">Moins d'une fois par mois</option>
+          <option value="jamais">Jamais</option>
+        </select>
+    
+        <label for="temps-session">11. Combien de temps passez-vous en moyenne à jouer aux jeux vidéo par session ?</label>
+        <select id="temps-session" name="temps-session">
+          <option value="moins-15-minutes">Moins de 15 minutes</option>
+          <option value="15-30-minutes">De 15 à 30 minutes</option>
+          <option value="30-45-minutes">De 30 à 45 minutes</option>
+          <option value="45-60-minutes">De 45 à 60 minutes</option>
+          <option value="plus-heure">Plus d'une heure</option>
+        </select>
+    
+        <label for="avec-qui-jouez-vous">12. Avec qui jouez-vous aux jeux vidéo ?</label>
+        <select id="avec-qui-jouez-vous" name="avec-qui-jouez-vous">
+          <option value="seul">Seul</option>
+          <option value="avec-amis">Avec des amis</option>
+          <option value="avec-famille">Avec des membres de ma famille</option>
+          <option value="avec-inconnus-en-ligne">Avec des inconnus en ligne</option>
+          <option value="autre-joueurs">Autre</option>
+        </select>
+    
+        <label for="deja-frequente-salle-jeux">13. Avez-vous déjà fréquenté une salle de jeux ?</label>
+        <select id="deja-frequente-salle-jeux" name="deja-frequente-salle-jeux">
+          <option value="regulierement">Oui, régulièrement</option>
+          <option value="occasionnellement">Oui, occasionnellement</option>
+          <option value="une-fois">Oui, une fois</option>
+          <option value="jamais">Non, jamais</option>
+        </select>
+    
+        <label for="critere-frequentation">14. Quels sont les critères qui vous incitent à fréquenter une salle de jeux ?</label>
+        <select id="critere-frequentation" name="critere-frequentation" multiple>
+          <option value="diversite-jeux">La diversité des jeux proposés</option>
+          <option value="qualite-equipements">La qualité des équipements</option>
+          <option value="ambiance-decoration">L'ambiance et la décoration</option>
+          <option value="prix-offres">Le prix et les offres</option>
+          <option value="proximite-accessibilite">La proximité et l'accessibilité</option>
+          <option value="service-accueil">Le service et l'accueil</option>
+          <option value="autre-critere">Autre</option>
+        </select>
+    
+        <label for="freins-frequentation">15. Quels sont les freins qui vous empêchent de fréquenter une salle de jeux ?</label>
+        <select id="freins-frequentation" name="freins-frequentation" multiple>
+          <option value="manque-interet-jeux">Le manque d'intérêt pour les jeux</option>
+          <option value="preference-jeu-domicile">La préférence pour le jeu à domicile</option>
+          <option value="cout-eleve">Le coût trop élevé</option>
+          <option value="eloignement-difficulte-acces">L'éloignement ou la difficulté d'accès</option>
+          <option value="manque-disponibilite-temps">Le manque de disponibilité ou de temps</option>
+          <option value="manque-convivialite-securite">Le manque de convivialité ou de sécurité</option>
+          <option value="autre-frein">Autre</option>
+        </select>
+    
+        <h2>Partie 3 : Satisfaction</h2>
+
+    <label for="satisfaction-globale">16. Quelle est votre satisfaction globale par rapport aux salles de jeux que vous avez fréquentées ?</label>
+    <select id="satisfaction-globale" name="satisfaction-globale">
+      <option value="tres-satisfait">Très satisfait</option>
+      <option value="plutot-satisfait">Plutôt satisfait</option>
+      <option value="ni-satisfait-ni-insatisfait">Ni satisfait ni insatisfait</option>
+      <option value="plutot-insatisfait">Plutôt insatisfait</option>
+      <option value="tres-insatisfait">Très insatisfait</option>
+    </select>
+
+    <label for="points-forts">17. Quels sont les points forts des salles de jeux que vous avez fréquentées ?</label>
+    <textarea id="points-forts" name="points-forts" rows="4" placeholder="_____________________"></textarea>
+
+    <label for="points-faibles">18. Quels sont les points faibles des salles de jeux que vous avez fréquentées ?</label>
+    <textarea id="points-faibles" name="points-faibles" rows="4" placeholder="_____________________"></textarea>
+
+    <label for="attentes-suggestions">19. Quelles sont vos attentes et vos suggestions pour améliorer les salles de jeux ?</label>
+    <textarea id="attentes-suggestions" name="attentes-suggestions" rows="4" placeholder="_____________________"></textarea>
+
+    <label for="interesse-par-projet">20. Seriez-vous intéressé par notre projet de salle de jeux ?</label>
+    <select id="interesse-par-projet" name="interesse-par-projet">
+      <option value="oui-certainement">Oui, certainement</option>
+      <option value="oui-probablement">Oui, probablement</option>
+      <option value="non-probablement-pas">Non, probablement pas</option>
+      <option value="non-certainement-pas">Non, certainement pas</option>
+    </select>
+
+    <label for="raison-non-interesse">21. Pourquoi ?</label>
+    <textarea id="raison-non-interesse" name="raison-non-interesse" rows="4" placeholder="_____________________"></textarea>
+
+    <h3>Merci d'avoir répondu à ce questionnaire !</h3>
+    <p>Vos réponses nous sont précieuses pour réaliser notre projet de salle de jeux. Si vous souhaitez être informé de l'avancée de notre projet, n'hésitez pas à nous laisser vos coordonnées :</p>
+
+    <label for="nom">Nom :</label>
+    <input type="text" id="nom" name="nom" placeholder="_____________________">
+
+    <label for="prenom">Prénom :</label>
+    <input type="text" id="prenom" name="prenom" placeholder="_____________________">
+
+    <label for="telephone">Téléphone :</label>
+    <input type="tel" id="telephone" name="telephone" placeholder="_____________________">
+
+    <label for="email">E-mail :</label>
+    <input type="email" id="email" name="email" placeholder="_____________________">
+      <!-- Bouton de soumission -->
+      <button type="submit">Soumettre</button>
+    </form>
+  </div>
+
+</body>
+</html>
