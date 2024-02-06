@@ -28,4 +28,4 @@ This repository contains the code for a simple website that functions as a quest
 
 ## Contact
 
-For any inquiries or support, feel free to contact [Your Name] at [your@email.com].
+For any inquiries or support, feel free to contact me at medrayanesouri@gmail.com.
